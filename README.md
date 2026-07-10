@@ -8,6 +8,7 @@ Stable Diffusion WebUI (Forge) for AMD Strix Halo (gfx1151), built on the offici
 - **Kernel**: Tested on `6.18.38-061838-generic`.
 - **Docker**: must be **Docker Engine (`docker-ce`)**, not Docker Desktop. Docker Desktop runs containers inside a VM and cannot see the host's `/dev/kfd` / `/dev/dri` GPU devices, so device passthrough will fail.
 
+> My PC is Asus ROG Flow Z13
 ## Build
 
 Create folders at home for persistent storage:
