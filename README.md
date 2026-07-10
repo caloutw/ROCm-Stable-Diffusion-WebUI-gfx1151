@@ -9,6 +9,20 @@ Stable Diffusion WebUI (Forge) for AMD Strix Halo (gfx1151), built on the offici
 - **Docker**: must be **Docker Engine (`docker-ce`)**, not Docker Desktop. Docker Desktop runs containers inside a VM and cannot see the host's `/dev/kfd` / `/dev/dri` GPU devices, so device passthrough will fail.
 
 > My PC is Asus ROG Flow Z13
+## Preparatory work
+Check the iommu is close:
+```sh
+sudo nano /etc/default/grub
+```
+Find the `GRUB_CMDLINE_LINUX_DEFAULT`, add this line at last: `amd_iommu=off amdgpu.gttsize=131072 ttm.pages_limit=33554432`<br>
+`Ctrl+O` -> `Ctrl+X` to exit<br>
+
+Apply and Reboot:
+```sh
+sudo update-grub
+sudo reboot
+```
+
 ## Build
 
 Create folders at home for persistent storage:
