@@ -49,6 +49,8 @@ docker run -d \
 
 ## Use
 
+You can put your models on `~/stable-diffusion-webui/models`
+
 Open `http://localhost:7860` in your browser.
 
 ## What's different from a stock Forge build?
@@ -60,6 +62,6 @@ Open `http://localhost:7860` in your browser.
 
 ## Result
 
-Generated a 1536×960 image with `AnythingXL`, taking about 41 seconds.
+Generated a 1536×960 image with `AnythingXL`, taking about 41 seconds (20 steps, Euler a, 1.5s/it).
 
 Note: the **first** generation takes ~20 minutes, because MIOpen has to JIT-compile GPU kernels for your specific shapes on first use. Subsequent generations reuse the cache and are fast.
