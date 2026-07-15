@@ -44,7 +44,7 @@ docker run -d \
     -p 7860:7860 \
     -v ~/stable-diffusion-webui/models:/spc/stable-diffusion-webui-forge/models \
     -v ~/stable-diffusion-webui/outputs:/spc/stable-diffusion-webui-forge/outputs \
-    ghcr.io/caloutw/rocm-stable-diffusion-webui-gfx1151:latest
+    ghcr.io/caloutw/rocm-stable-diffusion-webui-gfx1151:main
 ```
 
 ## Use
