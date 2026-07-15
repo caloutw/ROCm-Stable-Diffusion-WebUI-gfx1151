@@ -2,6 +2,9 @@
 
 Stable Diffusion WebUI (Forge) for AMD Strix Halo (gfx1151), built on the official ROCm 7.2 PyTorch image.
 
+## Know issue
+[] This docker can't run on debian.
+
 ## Prerequisites
 
 - **GPU**: AMD Strix Halo (gfx1151)
