@@ -66,4 +66,4 @@ RUN echo '{\n\
 
 EXPOSE 7860
 
-CMD ["python3", "stable-diffusion-webui-forge/launch.py", "--listen", "--port", "7860", "--skip-python-version-check", "--skip-torch-cuda-test", "--opt-sdp-attention", "--no-half"]
+CMD ["python3", "stable-diffusion-webui-forge/launch.py", "--listen", "--port", "7860", "--skip-python-version-check", "--skip-torch-cuda-test", "--opt-sdp-attention", "--no-half", "--enable-insecure-extension-access"]
