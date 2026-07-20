@@ -1,4 +1,4 @@
-FROM rocm/pytorch:rocm7.2.4_ubuntu24.04_py3.12_pytorch_2.10.0_ORT_1.23.2
+FROM rocm/pytorch:rocm7.14_ubuntu24.04_py3.12_pytorch_release_2.12.0
 
 LABEL maintainer="caloutw"
 LABEL org.opencontainers.image.title="ROCm-Stable-Diffusion-WebUI-gfx1151"
